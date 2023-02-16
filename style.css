@@ -1,0 +1,13 @@
+.idea{
+    background-image: url(images/banner.jpg);
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-heading{
+    font-size: 5rem;
+}
+.service-center{
+    margin: auto;
+}
