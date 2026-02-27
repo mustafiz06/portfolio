@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Mustafizur Rahman - Full-Stack Developer specializing in Laravel Blade, MERN Stack, Tailwind CSS & Bootstrap.">
+    <meta name="keywords"
+        content="Mustafizur Rahman, Full-Stack Developer, Laravel, MERN, React, Node.js, Express, MongoDB, MySQL, Bangladesh, Web Developer, Tailwind CSS, Bootstrap">
+    <meta name="author" content="Mustafizur Rahman">
+    <meta property="og:title" content="Mustafizur Rahman | Full-Stack Developer">
+    <meta property="og:description" content="Building scalable web applications with Laravel Blade & MERN Stack">
+    <meta property="og:image" content="/profile.png">
+    <meta property="og:url" content="https://mustafiz.xyz">
+    <meta name="theme-color" content="#6366F1">
+
+    <title>Mustafizur Rahman | Full-Stack Developer</title>
+
+    <!-- Preconnect for Performance -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    <i class="fas fa-code"></i>
+                    mustafiz.dev
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Animated Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i>
+                    Available for freelance & full-time roles
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span>Mustafizur Rahman</span><br />
+                    Full-Stack Developer
+                </h1>
+                <p class="hero-text">
+                    Building scalable web applications with <strong>Laravel Blade</strong> & <strong>MERN
+                        Stack</strong>.
+                    Expert in <strong>Tailwind CSS</strong> & <strong>Bootstrap</strong>, specializing in clean
+                    architecture and database optimization.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+
+                <div class="hero-social-proof">
+                    <div class="hero-social-proof-item">
+                        <i class="fas fa-code-branch"></i>
+                        <span>200+ Git Contributions</span>
+                    </div>
+                    <div class="hero-social-proof-item">
+                        <i class="fas fa-star"></i>
+                        <span>5+ Projects Completed</span>
+                    </div>
+                    <div class="hero-social-proof-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Client Satisfaction</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Image Container -->
+            <div class="hero-image-container">
+                <div class="profile-image-wrapper">
+                    <img src="/profile.png" alt="Mustafizur Rahman - Full-Stack Developer" class="profile-image"
+                        loading="eager" />
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-delayed"></div>
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        Available for work
+                    </div>
+                </div>
+
+                <!-- Floating Tech Icons (7 icons) -->
+                <div class="floating-icon icon-laravel"><i class="fab fa-laravel"></i></div>
+                <div class="floating-icon icon-js"><i class="fab fa-js"></i></div>
+                <div class="floating-icon icon-php"><i class="fab fa-php"></i></div>
+                <div class="floating-icon icon-mysql"><i class="fas fa-database"></i></div>
+                <div class="floating-icon icon-react"><i class="fab fa-react"></i></div>
+                <div class="floating-icon icon-express"><i class="fas fa-server"></i></div>
+                <div class="floating-icon icon-node"><i class="fab fa-node-js"></i></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="section-subtitle">A breakdown of my technical skills and proficiency levels based on real-world
+                project experience.</p>
+
+            <div class="skills-container">
+                <!-- Frontend Development -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <h3 class="skill-category-title">Frontend Development</h3>
+                            <p class="skill-category-desc">Building responsive, accessible UIs</p>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-laravel"></i> Laravel Blade</div>
+                                <span class="skill-level-badge advanced">Advanced</span>
+                            </div>
+                            <p class="skill-desc">Blade templating, components, layouts, directives, Laravel ecosystem
+                            </p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-react"></i> React.js</div>
+                                <span class="skill-level-badge medium">Medium</span>
+                            </div>
+                            <p class="skill-desc">Component architecture, hooks, state management, API integration</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-js"></i> JavaScript</div>
+                                <span class="skill-level-badge advanced">Advanced</span>
+                            </div>
+                            <p class="skill-desc">ES6+, DOM manipulation, async/await, event handling, debugging,
+                                advanced patterns</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-html5"></i> HTML5 & CSS3</div>
+                                <span class="skill-level-badge expert">Expert</span>
+                            </div>
+                            <p class="skill-desc">Semantic HTML, Flexbox, Grid, animations, responsive design,
+                                accessibility</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-bootstrap"></i> Bootstrap & Tailwind</div>
+                                <span class="skill-level-badge expert">Expert</span>
+                            </div>
+                            <p class="skill-desc">Utility-first styling, custom themes, responsive design, dark mode,
+                                components</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-server"></i></div>
+                        <div>
+                            <h3 class="skill-category-title">Backend Development</h3>
+                            <p class="skill-category-desc">Scalable APIs & server logic</p>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-laravel"></i> Laravel (PHP)</div>
+                                <span class="skill-level-badge advanced">Advanced</span>
+                            </div>
+                            <p class="skill-desc">Eloquent ORM, REST APIs, authentication, queues, blade templating,
+                                migrations</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-node-js"></i> Node.js & Express</div>
+                                <span class="skill-level-badge medium">Medium</span>
+                            </div>
+                            <p class="skill-desc">RESTful APIs, middleware, JWT auth, routing, error handling</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+                        <div>
+                            <h3 class="skill-category-title">Database & Tools</h3>
+                            <p class="skill-category-desc">Data management & version control</p>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fas fa-database"></i> MySQL</div>
+                                <span class="skill-level-badge advanced">Advanced</span>
+                            </div>
+                            <p class="skill-desc">Schema design, complex queries, indexing, transactions, optimization
+                            </p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-monero"></i> MongoDB</div>
+                                <span class="skill-level-badge medium">Medium</span>
+                            </div>
+                            <p class="skill-desc">Document modeling, aggregation pipeline, Mongoose ODM</p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <div class="skill-name"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+                                <span class="skill-level-badge expert">Expert</span>
+                            </div>
+                            <p class="skill-desc">Branching strategies, PR workflows, code reviews, conflict resolution
+                            </p>
+                            <div class="skill-progress">
+                                <div class="skill-progress-bar" style="--level: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section section-bg" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A selection of my recent work showcasing problem-solving and technical expertise
+                across different domains.</p>
+
+            <div class="projects-grid">
+                <!-- Project 1: MediStruERP -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-media">
+                        <i class="fas fa-building project-icon"></i>
+                        <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item"><i class="fas fa-calendar"></i><span>2025</span></div>
+                            <div class="project-meta-item"><i class="fas fa-user"></i><span>Lead Developer</span></div>
+                        </div>
+                        <h3 class="project-title">MediStruERP</h3>
+                        <p class="project-desc">
+                            Medical instrument distributor & importer company ERP management system. Handles inventory,
+                            orders, suppliers, and financial reporting.
+                        </p>
+                        <ul class="project-features">
+                            <li>Inventory management with real-time tracking</li>
+                            <li>Supplier & order management system</li>
+                            <li>Financial reporting & analytics dashboard</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tech-badge laravel"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="tech-badge mysql"><i class="fas fa-database"></i> MySQL</span>
+                            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/mustafiz06/medistruerp" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link btn-case-study">
+                                <i class="fas fa-book-open"></i> Case Study
+                            </a>
+                            <a href="#" class="project-link primary full-width">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Doctor Portal -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-media">
+                        <i class="fas fa-user-md project-icon"></i>
+                        <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item"><i class="fas fa-calendar"></i><span>2024</span></div>
+                            <div class="project-meta-item"><i class="fas fa-user"></i><span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Doctor Portal</h3>
+                        <p class="project-desc">
+                            MERN stack appointment management system for doctors to manage schedules, patient visits,
+                            and prescriptions efficiently.
+                        </p>
+                        <ul class="project-features">
+                            <li>Real-time appointment booking system</li>
+                            <li>Patient history & prescription management</li>
+                            <li>Email/SMS notifications for appointments</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tech-badge node"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-badge"><i class="fas fa-server"></i> Express</span>
+                            <span class="tech-badge react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-badge tailwind"><i class="fas fa-wind"></i> Tailwind</span>
+                            <span class="tech-badge mongodb"><i class="fab fa-monero"></i> MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link btn-case-study">
+                                <i class="fas fa-book-open"></i> Case Study
+                            </a>
+                            <a href="#" class="project-link primary full-width">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Genius Car Service -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-media">
+                        <i class="fas fa-car project-icon"></i>
+                        <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item"><i class="fas fa-calendar"></i><span>2024</span></div>
+                            <div class="project-meta-item"><i class="fas fa-user"></i><span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Genius Car Service</h3>
+                        <p class="project-desc">
+                            MERN stack service management platform for automotive workshops to track vehicle repairs,
+                            parts inventory, and customer service history.
+                        </p>
+                        <ul class="project-features">
+                            <li>Vehicle service history tracking</li>
+                            <li>Parts inventory management system</li>
+                            <li>Customer service booking & invoicing</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tech-badge node"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-badge"><i class="fas fa-server"></i> Express</span>
+                            <span class="tech-badge react"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-badge tailwind"><i class="fas fa-wind"></i> Tailwind</span>
+                            <span class="tech-badge mongodb"><i class="fab fa-monero"></i> MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link btn-case-study">
+                                <i class="fas fa-book-open"></i> Case Study
+                            </a>
+                            <a href="#" class="project-link primary full-width">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Artisan Laravel Blog -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-media">
+                        <i class="fas fa-pen-nib project-icon"></i>
+                        <span class="project-status completed"><i class="fas fa-check-circle"></i> Completed</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <div class="project-meta-item"><i class="fas fa-calendar"></i><span>2024</span></div>
+                            <div class="project-meta-item"><i class="fas fa-user"></i><span>Full-Stack Developer</span>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Artisan Laravel Blog</h3>
+                        <p class="project-desc">
+                            A dynamic blog platform built with Laravel featuring SEO-friendly URLs, rich text editing,
+                            admin dashboard, and comment systems.
+                        </p>
+                        <ul class="project-features">
+                            <li>Admin dashboard for post management</li>
+                            <li>Rich text editor with image upload</li>
+                            <li>SEO optimization & meta tags</li>
+                        </ul>
+                        <div class="project-tags">
+                            <span class="tech-badge laravel"><i class="fab fa-laravel"></i> Laravel</span>
+                            <span class="tech-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="tech-badge mysql"><i class="fas fa-database"></i> MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <a href="#" class="project-link btn-case-study">
+                                <i class="fas fa-book-open"></i> Case Study
+                            </a>
+                            <a href="#" class="project-link primary full-width">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-projects">
+                <a href="https://github.com/mustafiz06" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i> Explore All Projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Technical Blog</h2>
+            <p class="section-subtitle">Sharing insights, tutorials, and deep dives into web development challenges I've
+                solved.</p>
+
+            <div class="blog-grid">
+                <!-- Blog Post 1 -->
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Laravel</span>
+                            <span><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <a href="#" class="blog-title">Optimizing Eloquent Queries for Large Datasets</a>
+                        <p class="blog-excerpt">
+                            How I reduced API response time by 60% using eager loading, indexing strategies, and query
+                            caching in MediStruERP.
+                        </p>
+                        <a href="#" class="blog-link">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">React</span>
+                            <span><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <a href="#" class="blog-title">Building MERN Stack Apps with Tailwind CSS</a>
+                        <p class="blog-excerpt">
+                            A complete guide to building responsive MERN applications using Tailwind CSS utility classes
+                            and custom themes.
+                        </p>
+                        <a href="#" class="blog-link">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card animate-on-scroll">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-category">Database</span>
+                            <span><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <a href="#" class="blog-title">MySQL vs MongoDB: When to Use Each</a>
+                        <p class="blog-excerpt">
+                            Understanding the differences between relational and NoSQL databases and choosing the right
+                            one for your project.
+                        </p>
+                        <a href="#" class="blog-link">
+                            Read Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="view-all-projects">
+                <a href="#" class="btn btn-outline">
+                    <i class="fas fa-pen-nib"></i> View All Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section-bg" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What clients and collaborators say about working with me.</p>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Mustafiz transformed our medical instrument distribution system into a modern, efficient ERP.
+                        His expertise in Laravel and MySQL was impressive."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>Managing Director</h4>
+                            <p>MediStru Company</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Working with Mustafiz on our car service platform was seamless. He delivered the MERN stack
+                        backend ahead of schedule with exceptional code quality."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Sarah Khan</h4>
+                            <p>Manager, Genius Car Service</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card animate-on-scroll">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">
+                        "Mustafiz is not just a coder; he's a problem solver. He optimized our database queries and
+                        significantly improved our application performance."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AH</div>
+                        <div class="author-info">
+                            <h4>Ahmed Hassan</h4>
+                            <p>Senior Developer, TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Build Something Great</h2>
+            <p class="section-subtitle">Have a project that needs a skilled developer? I'm currently available for
+                freelance work, contract roles, or full-time opportunities.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Dhaka, Bangladesh (Open to remote worldwide)</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:themustafiz06@gmail.com">themustafiz06@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-globe"></i></div>
+                        <div class="contact-text">
+                            <h4>Portfolio</h4>
+                            <a href="https://mustafiz.xyz" target="_blank">mustafiz.xyz</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-text">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/mustafiz06" target="_blank">github.com/mustafiz06</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-text">
+                            <h4>LinkedIn</h4>
+                            <a href="https://www.linkedin.com/in/themustafiz06/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-success" id="formSuccess">
+                        <i class="fas fa-check-circle"></i> Message sent successfully! I'll respond within 24 hours.
+                    </div>
+
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                        <div class="form-error" id="nameError">Please enter your name</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <div class="form-error" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject"
+                            placeholder="Project inquiry, collaboration, etc.">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required
+                            placeholder="Tell me about your project, timeline, and goals..."></textarea>
+                        <div class="form-error" id="messageError">Please enter your message</div>
+                    </div>
+
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/mustafiz06" target="_blank" aria-label="GitHub"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/themustafiz06/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.hackerrank.com/profile/themustafiz06" target="_blank" aria-label="HackerRank"><i
+                        class="fab fa-hackerrank"></i></a>
+                <a href="https://mustafiz.xyz" target="_blank" aria-label="Website"><i class="fas fa-globe"></i></a>
+                <a href="mailto:themustafiz06@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-text">
+                &copy; <span id="year"></span> Mustafizur Rahman. Crafted with <i class="fas fa-heart"
+                    style="color: #ef4444;"></i> and clean code.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // ===== LOADING SCREEN =====
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            setTimeout(() => {
+                loading.classList.add('hidden');
+                setTimeout(() => {
+                    loading.style.display = 'none';
+                }, 500);
+            }, 800);
+        });
+
+        // ===== THEME TOGGLE =====
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            html.setAttribute('data-theme', 'dark');
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.style.transition = 'background 0.4s ease, color 0.4s ease';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            themeToggle.innerHTML = newTheme === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            setTimeout(() => { document.body.style.transition = ''; }, 400);
+        });
+
+        // ===== MOBILE NAVIGATION =====
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinks = document.getElementById('navLinks');
+        const header = document.getElementById('header');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileToggle.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // ===== SCROLL PROGRESS BAR =====
+        const scrollProgress = document.getElementById('scrollProgress');
+        window.addEventListener('scroll', () => {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (scrollTop / scrollHeight) * 100;
+            scrollProgress.style.width = scrolled + '%';
+        });
+
+        // ===== HEADER SCROLL EFFECT =====
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // ===== BACK TO TOP BUTTON =====
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== ANIMATE ON SCROLL =====
+        const animateElements = document.querySelectorAll('.animate-on-scroll');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => { entry.target.classList.add('visible'); }, index * 150);
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        animateElements.forEach(el => observer.observe(el));
+
+        // ===== CONTACT FORM =====
+        const contactForm = document.getElementById('contactForm');
+        const formSuccess = document.getElementById('formSuccess');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            document.querySelectorAll('.form-error').forEach(el => el.style.display = 'none');
+            formSuccess.style.display = 'none';
+
+            let isValid = true;
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!name.value.trim()) { document.getElementById('nameError').style.display = 'block'; isValid = false; }
+            if (!emailRegex.test(email.value)) { document.getElementById('emailError').style.display = 'block'; isValid = false; }
+            if (!message.value.trim()) { document.getElementById('messageError').style.display = 'block'; isValid = false; }
+
+            if (isValid) {
+                formSuccess.style.display = 'block';
+                contactForm.reset();
+                formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(() => { formSuccess.style.display = 'none'; }, 7000);
+                console.log('Form submitted:', { name: name.value, email: email.value, message: message.value });
+            }
+        });
+
+        // ===== SMOOTH SCROLL =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+
+        // ===== DYNAMIC YEAR =====
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ===== INITIALIZE ANIMATIONS =====
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.skill-progress-bar').forEach((progress, index) => {
+                const level = progress.style.getPropertyValue('--level');
+                progress.style.width = '0';
+                setTimeout(() => {
+                    progress.style.transition = 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                    progress.style.width = level;
+                }, 500 + (index * 100));
+            });
+            document.querySelector('.hero-content')?.classList.add('visible');
+        });
+
+        // ===== PARALLAX EFFECT FOR HERO =====
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY;
+            const heroImage = document.querySelector('.hero-image-container');
+            if (heroImage && scrolled < 800) {
+                heroImage.style.transform = `translateY(${scrolled * 0.2}px)`;
+            }
+        });
+
+        // ===== TILT EFFECT FOR CARDS =====
+        document.querySelectorAll('.project-card, .skill-category, .testimonial-card, .blog-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px) scale(1.02)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>
